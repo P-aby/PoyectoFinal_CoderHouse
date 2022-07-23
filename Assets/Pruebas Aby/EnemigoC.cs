@@ -3,7 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemigoC : MonoBehaviour
-{    
+{
+    public GameObject player;
+    public Transform TransPlayer;
+    public float speed;
+    public int Tiempo_Enem;
+    public Animator animEnemC;
+
     void Start()
     {
         
@@ -11,16 +17,39 @@ public class EnemigoC : MonoBehaviour
    
     void Update()
     {
-        
+        Distanciaenemigo();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
 
     {
-        if (collision.collider.tag == "Bala")
+        if (other.transform.tag == "Bala")
         {
-            Destroy(collision.collider.gameObject);
+            Destroy(other.transform.gameObject);
             Destroy(gameObject);
+        }
+        
+    }
+    void SeguirPlayer()
+    {
+        
+        transform.LookAt(TransPlayer);
+        transform.position = Vector3.MoveTowards(transform.position, TransPlayer.position, speed * Time.deltaTime);
+        
+    }
+    void AnimacionesEnemigo()
+    {
+        animEnemC.SetBool("Run Forward", true);
+    }
+
+    void Distanciaenemigo()
+    {
+        float dist = Vector3.Distance(transform.position, TransPlayer.position);
+
+        if (dist < Tiempo_Enem)
+        {
+            SeguirPlayer();
+            AnimacionesEnemigo();
         }
         
     }
