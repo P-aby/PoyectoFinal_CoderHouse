@@ -4,11 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Bullets10
-  - Bullets1
-  - Bullets2
-  - Gun1
-  - Gun2
+  - Bala
+  - Cristales_Domo
+  - Domo
+  - BaseC
   layers:
   - Default
   - TransparentFX
@@ -18,7 +17,7 @@ TagManager:
   - UI
   - 
   - 
-  - Ammo
+  - Enemigos
   - 
   - 
   - 
