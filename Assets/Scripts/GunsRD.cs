@@ -7,16 +7,21 @@ public class GunsRD : MonoBehaviour
     public GameObject BulletObject;
     public GameObject Gun1;
     public GameObject Gun2;
+    public GameObject Crosshair;
     public float Bullet1Count = 5f;
     public float Bullet2Count = 3f;
     public float Damage = 1f;
-    public enum GunType
-    {
-        Gun1,
-        Gun2,
-    }
+    public Camera fpsCam;
+    public float distance = 50;
+    public ParticleSystem Flash1;
+    public ParticleSystem Flash2;
+    //public enum GunType
+   // {
+       // Gun1,
+       // Gun2,
+   // }
 
-    public GunType guns;
+    //public GunType guns;
     void Start()
     {
         
@@ -26,44 +31,37 @@ public class GunsRD : MonoBehaviour
     void Update()
     {
        
-        switch (guns)
-        {
+       // switch (guns)
+       // {
             
-            case GunType.Gun1:
-                GunType1();               
-                break;
+         //   case GunType.Gun1:
+                //GunType1();               
+         //       break;
+         //
+          //  case GunType.Gun2:
+               // GunType2();
+        //       break;
 
-            case GunType.Gun2:
-                GunType2();                
-                break;
-
-        }
-    }
-
-
-
-    void GunType1()
-    {
+        // }
+        GunChange();
         Bullet1();
-        Damage = 1;
-        
-    }
-    void GunType2()
-    {
         Bullet2();
-        Damage = 3;
-        
     }
+
+
+
 
     void Bullet1()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Gun1.activeSelf == true && Input.GetButtonDown("Fire1"))
         {
             Bullet1Count = Bullet1Count - 1;
             if (Bullet1Count > 0)
             {
-                Instantiate(BulletObject);
+                Shoot();
+                Flash1.Play();
                 Debug.Log("FIRE");
+                
             }
             else
             {
@@ -74,12 +72,14 @@ public class GunsRD : MonoBehaviour
     }
     void Bullet2()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Gun2.activeSelf == true && Input.GetButtonDown("Fire1"))
         {
             Bullet2Count = Bullet2Count - 1;
             if (Bullet2Count > 0)
             {
-                Instantiate(BulletObject);
+                //Instantiate(BulletObject);
+                Shoot();
+                Flash2.Play();
                 Debug.Log("FIRE");
             }
             else
@@ -92,23 +92,25 @@ public class GunsRD : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        //Se obtine el arma 1
         if (collision.transform.tag == "Gun1")
         {
             GetGun1();
-            //aqui se deberían activar los objetos bullet que te dan balas (Bullet1), no se si instanciar o ponerlos activos
+           
         }
-
+        //Se obtine el arma 2
         if (collision.transform.tag == "Gun2")
         {
             GetGun2();
-            //aqui se bebería de desactivar la Gun1 y qudar la Gun2, también activar los objetos Bullet2 que dan balas a esta arma
+           
         }
-
+        //Se obtinen municiones para arma 1
         if (collision.transform.tag == "Bullets1")
         {
             Bullet1Count = Bullet1Count+10;
             
         }
+        //Se obtinen municiones para arma 2
         if (collision.transform.tag == "Bullets2")
         {
             Bullet2Count = Bullet2Count + 5;
@@ -118,18 +120,45 @@ public class GunsRD : MonoBehaviour
     }
    void GetGun1()
     {
-        //Gun1 = Instantiate(Gun1, transform.position, transform.rotation);
-        // Gun1.transform.parent = GameObject.Find("PlayerRD").transform;
-
-        //var player = transform;
-        //player = (GameObject.Find("PlayerRD")).transform;
-        //Instantiate(Gun1).transform.parent = player;
-        Instantiate(Gun1, transform.position, Quaternion.identity, transform);
-
+        Damage = 1;
+        Gun1.SetActive(true);
+        Gun2.SetActive(false);
+        Crosshair.SetActive(true);
 
     }
     void GetGun2()
     {
-        Instantiate(Gun2);
+        Damage = 3;
+        Gun2.SetActive(true);
+        Gun1.SetActive(false);
+        Crosshair.SetActive(true);
+    }
+
+    private void Shoot()
+    {
+        
+        RaycastHit hit;
+        if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, distance))
+        {
+            Debug.Log(hit.transform.name);
+            Enemy1 enemy = hit.transform.GetComponent<Enemy1>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(Damage);
+            }
+        }
+
+    }
+    void GunChange()
+    {
+        if (Gun2.activeSelf == true && Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            GetGun1();
+        }
+
+        if (Gun1.activeSelf == true && Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            GetGun2();
+        }
     }
 }
