@@ -9,6 +9,7 @@ public class EnemigoC : MonoBehaviour
     public float speed;
     public int Tiempo_Enem;
     public Animator animEnemC;
+   
 
     void Start()
     {
@@ -20,16 +21,16 @@ public class EnemigoC : MonoBehaviour
         Distanciaenemigo();
     }
 
-    private void OnTriggerEnter(Collider other)
+    //private void OnTriggerEnter(Collider other)
 
-    {
-        if (other.transform.tag == "Bala")
-        {
-            Destroy(other.transform.gameObject);
-            Destroy(gameObject);
-        }
+    //{
+    //    if (other.transform.tag == "Bala")
+    //    {
+    //        Destroy(other.transform.gameObject);
+    //        Destroy(gameObject);
+   //     }
         
-    }
+   // }
     void SeguirPlayer()
     {
         

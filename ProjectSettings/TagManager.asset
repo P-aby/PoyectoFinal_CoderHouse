@@ -9,6 +9,10 @@ TagManager:
   - Domo
   - BaseC
   - Enemy1
+  - Gun1
+  - Bullets1
+  - Gun2
+  - Bullets2
   layers:
   - Default
   - TransparentFX
@@ -19,7 +23,7 @@ TagManager:
   - 
   - 
   - Enemigos
-  - 
+  - Guns
   - 
   - 
   - 

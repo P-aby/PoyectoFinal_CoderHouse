@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GunsRD : MonoBehaviour
 {
-    public GameObject BulletObject;
+ 
     public GameObject Gun1;
     public GameObject Gun2;
     public GameObject Crosshair;
@@ -141,7 +141,7 @@ public class GunsRD : MonoBehaviour
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, distance))
         {
             Debug.Log(hit.transform.name);
-            Enemy1 enemy = hit.transform.GetComponent<Enemy1>();
+            EnemyHealth enemy = hit.transform.GetComponent<EnemyHealth>();
             if (enemy != null)
             {
                 enemy.TakeDamage(Damage);

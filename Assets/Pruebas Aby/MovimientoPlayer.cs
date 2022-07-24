@@ -6,10 +6,10 @@ public class MovimientoPlayer : MonoBehaviour
 {
     public Vector3 desplazamiento;
     public float speed;
-    public GameObject prefabBala;
-    public Transform arma;
-    public float tiempobala;
-    public float FuerzaBala;
+    //public GameObject prefabBala;
+   // public Transform arma;
+    //public float tiempobala;
+    //public float FuerzaBala;
     public float vida;
     public int CristalDomo;
     public GameObject Domo;
@@ -24,7 +24,7 @@ public class MovimientoPlayer : MonoBehaviour
     void Update()
     {
         Movimiento();
-        InstanciarBala();
+        //InstanciarBala();
     }
     void Movimiento()
     {
@@ -37,15 +37,15 @@ public class MovimientoPlayer : MonoBehaviour
        transform.Rotate(0, rot, 0);
 
     }
-    void InstanciarBala()
-    {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            GameObject balaAuxiliar = Instantiate(prefabBala, arma.position + transform.forward * 1, Quaternion.identity);
-            balaAuxiliar.GetComponent<Rigidbody>().AddForce(transform.forward * FuerzaBala);
-            Destroy(balaAuxiliar, tiempobala);
-        }
-    }
+    //void InstanciarBala()
+    //{
+     //   if (Input.GetButtonDown("Fire1"))
+    //    {
+    //        GameObject balaAuxiliar = Instantiate(prefabBala, arma.position + transform.forward * 1, Quaternion.identity);
+    //        balaAuxiliar.GetComponent<Rigidbody>().AddForce(transform.forward * FuerzaBala);
+    //        Destroy(balaAuxiliar, tiempobala);
+    //    }
+   // }
 
     private void OnCollisionEnter(Collision collision)
     {
