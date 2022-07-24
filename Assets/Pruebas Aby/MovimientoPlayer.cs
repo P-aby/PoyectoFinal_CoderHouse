@@ -61,6 +61,12 @@ public class MovimientoPlayer : MonoBehaviour
 
             var animDomo = Domo.GetComponent<Animator>();
             animDomo.SetBool("Domo", true);
+
+            Debug.Log("Recoge las municiones y destruye a los enemigos");
+        }
+        if(collision.collider.transform.tag == "Pad")
+        {
+            Debug.Log("Consigue los cristales para desactivar el Domo");
         }
     }
 
@@ -80,6 +86,7 @@ public class MovimientoPlayer : MonoBehaviour
             var anim = BaseC.GetComponent<Animator>();
             anim.SetBool("BasesCristales", true);
         }
+
 
 
 

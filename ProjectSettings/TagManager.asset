@@ -13,6 +13,8 @@ TagManager:
   - Bullets1
   - Gun2
   - Bullets2
+  - FxTemporaire
+  - Pad
   layers:
   - Default
   - TransparentFX
