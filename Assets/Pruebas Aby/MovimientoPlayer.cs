@@ -62,11 +62,11 @@ public class MovimientoPlayer : MonoBehaviour
             var animDomo = Domo.GetComponent<Animator>();
             animDomo.SetBool("Domo", true);
 
-            Debug.Log("Recoge las municiones y destruye a los enemigos");
+            Debug.Log("Recoge las municiones y destruye a los enemigos, puedes cambiar de arma con 1 y 2");
         }
         if(collision.collider.transform.tag == "Pad")
         {
-            Debug.Log("Consigue los cristales para desactivar el Domo");
+            Debug.Log("Consigue los cristales y el arma para desactivar el Domo");
         }
     }
 
