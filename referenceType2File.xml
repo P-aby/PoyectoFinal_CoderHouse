@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTypeDate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TypeDate>
+    <guid>842f43ac94b4b4f72ac0898650ddcc44</guid>
+    <fileName>Assets/Cleaner/Editor/AssetCollector.cs</fileName>
+    <timeStamp>2015-12-09T12:51:26-06:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.AssetCollector</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>805140a4856714e288ea84985d3023df</guid>
+    <fileName>Assets/Cleaner/Editor/AssetReferenceCollection.cs</fileName>
+    <timeStamp>2015-12-09T12:51:26-06:00</timeStamp>
+    <typeFullName>
+      <string>AssetReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>202c278a17939b24c8b79c0ee1f94d8f</guid>
+    <fileName>Assets/Cleaner/Editor/ClassReferenceCollection.cs</fileName>
+    <timeStamp>2015-12-09T12:51:26-06:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.ClassReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0d05386265df34bac8d0b6df44aa494c</guid>
+    <fileName>Assets/Cleaner/Editor/CollectionData.cs</fileName>
+    <timeStamp>2015-12-09T12:51:26-06:00</timeStamp>
+    <typeFullName>
+      <string>CollectionData</string>
+      <string>TypeDate</string>
+      <string>IReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>74eec3bfba0594259ac2843353c082a3</guid>
+    <fileName>Assets/Cleaner/Editor/FindUnusedAssetsWindow.cs</fileName>
+    <timeStamp>2015-12-09T12:51:26-06:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.FindUnusedAssetsWindow</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2c4f01a79a77a45a9a84004cc2b78098</guid>
+    <fileName>Assets/Cleaner/Editor/ShaderReferenceCollection.cs</fileName>
+    <timeStamp>2015-12-09T12:51:26-06:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.ShaderReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d9c4e89389fa607479b0744ec6611490</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_AutoStopLoopedEffect.cs</fileName>
+    <timeStamp>2022-07-27T00:08:44.5377845-06:00</timeStamp>
+    <typeFullName>
+      <string>CFX_AutoStopLoopedEffect</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8b17383a625e88348a99a6eeef772d40</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_New.cs</fileName>
+    <timeStamp>2022-07-27T00:08:44.5387841-06:00</timeStamp>
+    <typeFullName>
+      <string>CFX_Demo_New</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>27666076fd6e86245aa62dfd9e943d6c</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs</fileName>
+    <timeStamp>2022-07-27T00:08:44.5397827-06:00</timeStamp>
+    <typeFullName>
+      <string>CFX_Demo_RandomDir</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>83982eed39974834bada258fbddd1e72</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDirectionTranslate.cs</fileName>
+    <timeStamp>2022-07-27T00:08:44.5397827-06:00</timeStamp>
+    <typeFullName>
+      <string>CFX_Demo_RandomDirectionTranslate</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f71e90e62dfae594490eb4d9b611f930</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs</fileName>
+    <timeStamp>2022-07-27T00:08:44.5407898-06:00</timeStamp>
+    <typeFullName>
+      <string>CFX_Demo_RotateCamera</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1e42ac40a6fba2e4d94a0070ef45cea1</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_Translate.cs</fileName>
+    <timeStamp>2022-07-27T00:08:44.5407898-06:00</timeStamp>
+    <typeFullName>
+      <string>CFX_Demo_Translate</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6fd2e8874f60266498a388d7229a1bac</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs</fileName>
+    <timeStamp>2022-07-27T00:08:44.6140108-06:00</timeStamp>
+    <typeFullName>
+      <string>CFX_AutoDestructShuriken</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b78c1ba9facacbd48b8e1d9a4fb3ee0d</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoRotate.cs</fileName>
+    <timeStamp>2022-07-27T00:08:44.614828-06:00</timeStamp>
+    <typeFullName>
+      <string>CFX_AutoRotate</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>74eb290077a495b4f8489f895b2cc599</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightFlicker.cs</fileName>
+    <timeStamp>2022-07-27T00:08:44.614828-06:00</timeStamp>
+    <typeFullName>
+      <string>CFX_LightFlicker</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c2255468ea97f384a9ebbb13e497e050</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs</fileName>
+    <timeStamp>2022-07-27T00:08:44.6155738-06:00</timeStamp>
+    <typeFullName>
+      <string>CFX_LightIntensityFade</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d56b3c7055d81cb44803b5d7db4b65e0</guid>
+    <fileName>Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs</fileName>
+    <timeStamp>2022-07-27T00:08:44.4405417-06:00</timeStamp>
+    <typeFullName>
+      <string>CFXEasyEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0fbac4f53fd4ece4797c31cedb1fbd21</guid>
+    <fileName>Assets/Pruebas Aby/EnemigoA.cs</fileName>
+    <timeStamp>2022-07-23T11:18:00.0985889-06:00</timeStamp>
+    <typeFullName>
+      <string>EnemigoA</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a58ed597e7d8f16428129c0bebc8c082</guid>
+    <fileName>Assets/Pruebas Aby/EnemigoB.cs</fileName>
+    <timeStamp>2022-07-23T11:18:00.0995864-06:00</timeStamp>
+    <typeFullName>
+      <string>EnemigoB</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>cf4b0839f1ef35c4ba58733d43cc46c6</guid>
+    <fileName>Assets/Pruebas Aby/EnemigoC.cs</fileName>
+    <timeStamp>2022-07-23T18:59:16.9165451-06:00</timeStamp>
+    <typeFullName>
+      <string>EnemigoC</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>008dfcfd529449d41be53b3ee1f69048</guid>
+    <fileName>Assets/Pruebas Aby/MovimientoPlayer.cs</fileName>
+    <timeStamp>2022-07-27T20:36:18.0080964-06:00</timeStamp>
+    <typeFullName>
+      <string>MovimientoPlayer</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>eb411027c79721841b6424092cb7b502</guid>
+    <fileName>Assets/Scripts/AudioManager.cs</fileName>
+    <timeStamp>2022-07-27T19:06:18.5568162-06:00</timeStamp>
+    <typeFullName>
+      <string>AudioManager</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f22fbe1fb67d2de41b7538b130394ec8</guid>
+    <fileName>Assets/Scripts/CameraPitch.cs</fileName>
+    <timeStamp>2022-07-23T18:54:36.0356985-06:00</timeStamp>
+    <typeFullName>
+      <string>CameraPitch</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>77d48531d4795254a810457579c8b1df</guid>
+    <fileName>Assets/Scripts/DestroyColObj.cs</fileName>
+    <timeStamp>2022-07-23T07:42:00.798581-06:00</timeStamp>
+    <typeFullName>
+      <string>DestroyColObj</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9ec316c648fcd9c469f14afe1ff3a591</guid>
+    <fileName>Assets/Scripts/Enemy1.cs</fileName>
+    <timeStamp>2022-07-23T16:24:07.096296-06:00</timeStamp>
+    <typeFullName>
+      <string>Enemy1</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d778a20fab5c54f488c020e467bcb115</guid>
+    <fileName>Assets/Scripts/EnemyHealth.cs</fileName>
+    <timeStamp>2022-07-23T21:52:02.5123625-06:00</timeStamp>
+    <typeFullName>
+      <string>EnemyHealth</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4d2f6bc67d4ee0642bcd67cb78e217e2</guid>
+    <fileName>Assets/Scripts/GunsRD.cs</fileName>
+    <timeStamp>2022-07-27T20:07:37.12681-06:00</timeStamp>
+    <typeFullName>
+      <string>GunsRD</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>715cfa66756d5684f9976a58672c08b7</guid>
+    <fileName>Assets/Scripts/ManagerAudio.cs</fileName>
+    <timeStamp>2022-07-27T18:16:05.772514-06:00</timeStamp>
+    <typeFullName>
+      <string>ManagerAudio</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c79102a3e331ebd44be6b7bff1fa21ce</guid>
+    <fileName>Assets/Scripts/PlayerHealth.cs</fileName>
+    <timeStamp>2022-07-27T19:35:34.6708699-06:00</timeStamp>
+    <typeFullName>
+      <string>PlayerHealth</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f2ee8963acdf2374f85b858482c10906</guid>
+    <fileName>Assets/Scripts/PlayerRD.cs</fileName>
+    <timeStamp>2022-07-23T06:03:38.9195599-06:00</timeStamp>
+    <typeFullName>
+      <string>PlayerRD</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>af74bb60eecc55a4e9db95ea34791777</guid>
+    <fileName>Assets/Scripts/SceneLoader.cs</fileName>
+    <timeStamp>2022-07-27T19:40:03.9011468-06:00</timeStamp>
+    <typeFullName>
+      <string>SceneLoader</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+</ArrayOfTypeDate>

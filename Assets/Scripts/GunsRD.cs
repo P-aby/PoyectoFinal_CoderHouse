@@ -15,13 +15,10 @@ public class GunsRD : MonoBehaviour
     public float distance = 50;
     public ParticleSystem Flash1;
     public ParticleSystem Flash2;
-    //public enum GunType
-   // {
-       // Gun1,
-       // Gun2,
-   // }
+    public AudioSource AudioHit;
+    public AudioSource AudioShoot;
 
-    //public GunType guns;
+
     void Start()
     {
         
@@ -31,18 +28,7 @@ public class GunsRD : MonoBehaviour
     void Update()
     {
        
-       // switch (guns)
-       // {
-            
-         //   case GunType.Gun1:
-                //GunType1();               
-         //       break;
-         //
-          //  case GunType.Gun2:
-               // GunType2();
-        //       break;
 
-        // }
         GunChange();
         Bullet1();
         Bullet2();
@@ -60,6 +46,7 @@ public class GunsRD : MonoBehaviour
             {
                 Shoot();
                 Flash1.Play();
+                AudioShoot.Play();
                 Debug.Log("FIRE");
                 
             }
@@ -77,9 +64,10 @@ public class GunsRD : MonoBehaviour
             Bullet2Count = Bullet2Count - 1;
             if (Bullet2Count > 0)
             {
-                //Instantiate(BulletObject);
+               
                 Shoot();
                 Flash2.Play();
+                AudioShoot.Play();
                 Debug.Log("FIRE");
             }
             else
@@ -145,8 +133,10 @@ public class GunsRD : MonoBehaviour
             if (enemy != null)
             {
                 enemy.TakeDamage(Damage);
+                AudioHit.Play();
             }
         }
+       
 
     }
     void GunChange()
@@ -161,4 +151,5 @@ public class GunsRD : MonoBehaviour
             GetGun2();
         }
     }
+   
 }

@@ -15,6 +15,8 @@ public class MovimientoPlayer : MonoBehaviour
     public GameObject Domo;
     public GameObject BaseC;
     public GameObject Cristales;
+    public GameObject DomoUI;
+   
 
     void Start()
     {
@@ -63,13 +65,28 @@ public class MovimientoPlayer : MonoBehaviour
             animDomo.SetBool("Domo", true);
 
             Debug.Log("Recoge las municiones y destruye a los enemigos, puedes cambiar de arma con 1 y 2");
+           
+
         }
         if(collision.collider.transform.tag == "Pad")
         {
             Debug.Log("Consigue los cristales y el arma para desactivar el Domo");
+           
         }
     }
 
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.collider.transform.tag == "Pad")
+        {
+           
+            DomoUI.SetActive(true);
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        DomoUI.SetActive(false);
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Cristales_Domo")
