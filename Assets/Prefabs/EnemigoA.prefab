@@ -41,9 +41,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf4b0839f1ef35c4ba58733d43cc46c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 8413140764752651059, guid: 21278d01006050148bb018386308777d, type: 3}
-  TransPlayer: {fileID: 8413140764752651023, guid: 21278d01006050148bb018386308777d,
-    type: 3}
+  player: {fileID: 0}
+  TransPlayer: {fileID: 0}
   speed: 8
   Tiempo_Enem: 20
   animEnemC: {fileID: 8152584120575734761}
@@ -82,7 +81,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1128758269040250, guid: f88c6ad57910d8648807bcf0c131f49d, type: 3}
       propertyPath: m_Name
-      value: EnemigoC Variant
+      value: EnemigoA
       objectReference: {fileID: 0}
     - target: {fileID: 1128758269040250, guid: f88c6ad57910d8648807bcf0c131f49d, type: 3}
       propertyPath: m_Layer
@@ -308,6 +307,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 137111010946803922, guid: f88c6ad57910d8648807bcf0c131f49d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e1b9595c682f24e4c88649a550fb24c9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f88c6ad57910d8648807bcf0c131f49d, type: 3}
 --- !u!1 &8103760902138337519 stripped
