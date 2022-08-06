@@ -5311,9 +5311,10 @@ MonoBehaviour:
   speed: 10
   vida: 100
   CristalDomo: 0
-  Domo: {fileID: 0}
+  Domo: {fileID: 2241399649704235092, guid: b44f79d5bf12a454f8ef687687e51117, type: 3}
   BaseC: {fileID: 0}
   Cristales: {fileID: 0}
+  DomoUI: {fileID: 0}
 --- !u!54 &6469133366324365941
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5352,6 +5353,8 @@ MonoBehaviour:
   distance: 80
   Flash1: {fileID: 6604222147641629010}
   Flash2: {fileID: 9177186457719855573}
+  AudioHit: {fileID: 0}
+  AudioShoot: {fileID: 0}
 --- !u!114 &7271904268094633773
 MonoBehaviour:
   m_ObjectHideFlags: 0

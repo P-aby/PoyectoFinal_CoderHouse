@@ -6,18 +6,14 @@ public class MovimientoPlayer : MonoBehaviour
 {
     public Vector3 desplazamiento;
     public float speed;
-    //public GameObject prefabBala;
-   // public Transform arma;
-    //public float tiempobala;
-    //public float FuerzaBala;
     public float vida;
     public int CristalDomo;
     public GameObject Domo;
+    public GameObject Pad;
     public GameObject BaseC;
     public GameObject Cristales;
     public GameObject DomoUI;
    
-
     void Start()
     {
         
@@ -26,7 +22,7 @@ public class MovimientoPlayer : MonoBehaviour
     void Update()
     {
         Movimiento();
-        //InstanciarBala();
+        
     }
     void Movimiento()
     {
@@ -39,16 +35,7 @@ public class MovimientoPlayer : MonoBehaviour
        transform.Rotate(0, rot, 0);
 
     }
-    //void InstanciarBala()
-    //{
-     //   if (Input.GetButtonDown("Fire1"))
-    //    {
-    //        GameObject balaAuxiliar = Instantiate(prefabBala, arma.position + transform.forward * 1, Quaternion.identity);
-    //        balaAuxiliar.GetComponent<Rigidbody>().AddForce(transform.forward * FuerzaBala);
-    //        Destroy(balaAuxiliar, tiempobala);
-    //    }
-   // }
-
+   
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.transform.tag == "Domo")
@@ -77,10 +64,9 @@ public class MovimientoPlayer : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.collider.transform.tag == "Pad")
+        if (collision.collider.transform.name == "PressurePad")
         {
-           
-            DomoUI.SetActive(true);
+           DomoUI.SetActive(true);
         }
     }
     private void OnCollisionExit(Collision collision)
@@ -92,21 +78,17 @@ public class MovimientoPlayer : MonoBehaviour
         if (other.transform.tag == "Cristales_Domo")
         {
             Destroy(other.transform.gameObject);
-            CristalDomo++;
+            CristalDomo ++;
             Debug.Log("Tienes: " + CristalDomo + " Cristales para desactivar el Domo");
         }
 
-        if (CristalDomo == 3)
+        if (CristalDomo >= 3)
         {
             Debug.Log("Dirigete a la base para colocar los cristales");
            
             var anim = BaseC.GetComponent<Animator>();
-            anim.SetBool("BasesCristales", true);
-        }
-
-
-
-
-        
+            anim.SetBool("BasesCristales",true);
+            Destroy(Pad);
+        }        
     }
 }

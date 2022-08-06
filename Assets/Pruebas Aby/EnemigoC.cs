@@ -21,16 +21,6 @@ public class EnemigoC : MonoBehaviour
         Distanciaenemigo();
     }
 
-    //private void OnTriggerEnter(Collider other)
-
-    //{
-    //    if (other.transform.tag == "Bala")
-    //    {
-    //        Destroy(other.transform.gameObject);
-    //        Destroy(gameObject);
-   //     }
-        
-   // }
     void SeguirPlayer()
     {
         
@@ -54,4 +44,13 @@ public class EnemigoC : MonoBehaviour
         }
         
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.name == "Player")
+        {
+            FindObjectOfType<PlayerInterfaz>().RecibirGolpe();
+        }
+    }
+
+
 }
