@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MovimientoPlayer : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class MovimientoPlayer : MonoBehaviour
     public GameObject Pad;
     public GameObject BaseC;
     public GameObject Cristales;
-    public GameObject DomoUI;
-   
+    public Text Mensajes;
+
     void Start()
     {
         
@@ -35,12 +36,16 @@ public class MovimientoPlayer : MonoBehaviour
        transform.Rotate(0, rot, 0);
 
     }
+    void ResetearText()
+    {
+        Mensajes.text = "";
+    }
    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.transform.tag == "Domo")
         {
-            vida--;
+            FindObjectOfType<PlayerInterfaz>().RecibirGolpe();
         }      
 
         if (collision.collider.transform.tag == "BaseC")
@@ -50,42 +55,40 @@ public class MovimientoPlayer : MonoBehaviour
 
             var animDomo = Domo.GetComponent<Animator>();
             animDomo.SetBool("Domo", true);
+            
+            Mensajes.text = "Recoge las municiones y destruye a los enemigos, puedes cambiar de arma con 1 y 2";
+            Invoke("ResetearText",2f);
 
-            Debug.Log("Recoge las municiones y destruye a los enemigos, puedes cambiar de arma con 1 y 2");
-           
-
+            
         }
-        if(collision.collider.transform.tag == "Pad")
-        {
-            Debug.Log("Consigue los cristales y el arma para desactivar el Domo");
-           
-        }
+        
     }
 
     private void OnCollisionStay(Collision collision)
     {
         if (collision.collider.transform.name == "PressurePad")
         {
-           DomoUI.SetActive(true);
-        }
+            Mensajes.text = "Consigue los cristales y el arma para desactivar el Domo. Puedes cambiar de arma con las teclas 1 y 2";
+            Invoke("ResetearText", 2f);
+        }       
+
     }
-    private void OnCollisionExit(Collision collision)
-    {
-        DomoUI.SetActive(false);
-    }
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Cristales_Domo")
         {
+            CristalDomo++;
             Destroy(other.transform.gameObject);
-            CristalDomo ++;
-            Debug.Log("Tienes: " + CristalDomo + " Cristales para desactivar el Domo");
+                        
         }
 
         if (CristalDomo >= 3)
         {
-            Debug.Log("Dirigete a la base para colocar los cristales");
-           
+
+            Mensajes.text = "Dirigite a la base inicial para desactivar el Domo.";
+            Invoke("ResetearText", 2f);
+
             var anim = BaseC.GetComponent<Animator>();
             anim.SetBool("BasesCristales",true);
             Destroy(Pad);
