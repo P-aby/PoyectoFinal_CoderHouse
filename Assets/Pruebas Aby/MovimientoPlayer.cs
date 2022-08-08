@@ -57,21 +57,18 @@ public class MovimientoPlayer : MonoBehaviour
             animDomo.SetBool("Domo", true);
             
             Mensajes.text = "Recoge las municiones y destruye a los enemigos, puedes cambiar de arma con 1 y 2";
-            Invoke("ResetearText",2f);
-
-            
+            Invoke("ResetearText",2f);            
         }
         
     }
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.collider.transform.name == "PressurePad")
+        if (collision.collider.transform.tag == "Pad")
         {
             Mensajes.text = "Consigue los cristales y el arma para desactivar el Domo. Puedes cambiar de arma con las teclas 1 y 2";
             Invoke("ResetearText", 2f);
         }       
-
     }
     
     private void OnTriggerEnter(Collider other)
@@ -79,13 +76,11 @@ public class MovimientoPlayer : MonoBehaviour
         if (other.transform.tag == "Cristales_Domo")
         {
             CristalDomo++;
-            Destroy(other.transform.gameObject);
-                        
+            Destroy(other.transform.gameObject);                        
         }
 
         if (CristalDomo >= 3)
         {
-
             Mensajes.text = "Dirigite a la base inicial para desactivar el Domo.";
             Invoke("ResetearText", 2f);
 
