@@ -14,6 +14,8 @@ public class MovimientoPlayer : MonoBehaviour
     public GameObject BaseC;
     public GameObject Cristales;
     public Text Mensajes;
+    public Animator anim;
+
 
     void Start()
     {
@@ -34,6 +36,15 @@ public class MovimientoPlayer : MonoBehaviour
        desplazamiento = new Vector3(hor, 0, ver);
        transform.Translate(desplazamiento * speed * Time.deltaTime);
        transform.Rotate(0, rot, 0);
+
+        if (desplazamiento == Vector3.zero)
+        {
+            anim.SetBool("Run", false);
+        }
+        else
+        {
+            anim.SetBool("Run", true);
+        }
 
     }
     void ResetearText()
