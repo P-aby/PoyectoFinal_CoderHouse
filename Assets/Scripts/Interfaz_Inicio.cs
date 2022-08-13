@@ -21,4 +21,13 @@ public class Interfaz_Inicio : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void ButtonCharacter()
+    {
+        SceneManager.LoadScene(3);
+    }
+    public void ButtonMenuInicio()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

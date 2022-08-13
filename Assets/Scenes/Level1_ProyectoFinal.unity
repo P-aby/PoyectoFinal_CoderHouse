@@ -5934,7 +5934,7 @@ GameObject:
   - component: {fileID: 1748618792}
   m_Layer: 0
   m_Name: PostProcessing
-  m_TagString: Untagged
+  m_TagString: postprocessing
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7568,6 +7568,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1869072760, guid: abb95c95f497ab24186f486e0236ceb4, type: 3}
+      propertyPath: volumeLayer.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2521384214448656330, guid: abb95c95f497ab24186f486e0236ceb4,
         type: 3}
       propertyPath: m_IsActive
@@ -7610,6 +7614,11 @@ PrefabInstance:
       objectReference: {fileID: 1628954986}
     - target: {fileID: 6779707824571566099, guid: abb95c95f497ab24186f486e0236ceb4,
         type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 898144672}
+    - target: {fileID: 6779707824571566099, guid: abb95c95f497ab24186f486e0236ceb4,
+        type: 3}
       propertyPath: Gun1
       value: 
       objectReference: {fileID: 261489845}
@@ -7623,6 +7632,16 @@ PrefabInstance:
       propertyPath: Image
       value: 
       objectReference: {fileID: 1085103871}
+    - target: {fileID: 6779707824571566099, guid: abb95c95f497ab24186f486e0236ceb4,
+        type: 3}
+      propertyPath: cAzul
+      value: 
+      objectReference: {fileID: 873446855}
+    - target: {fileID: 6779707824571566099, guid: abb95c95f497ab24186f486e0236ceb4,
+        type: 3}
+      propertyPath: cRojo
+      value: 
+      objectReference: {fileID: 937040270}
     - target: {fileID: 6779707824571566099, guid: abb95c95f497ab24186f486e0236ceb4,
         type: 3}
       propertyPath: Flash1
@@ -7645,14 +7664,29 @@ PrefabInstance:
       objectReference: {fileID: 941421320}
     - target: {fileID: 6779707824571566099, guid: abb95c95f497ab24186f486e0236ceb4,
         type: 3}
+      propertyPath: Barravida
+      value: 
+      objectReference: {fileID: 164826867}
+    - target: {fileID: 6779707824571566099, guid: abb95c95f497ab24186f486e0236ceb4,
+        type: 3}
       propertyPath: Crosshair
       value: 
       objectReference: {fileID: 1412705058}
     - target: {fileID: 6779707824571566099, guid: abb95c95f497ab24186f486e0236ceb4,
         type: 3}
+      propertyPath: cAmarillo
+      value: 
+      objectReference: {fileID: 681460292}
+    - target: {fileID: 6779707824571566099, guid: abb95c95f497ab24186f486e0236ceb4,
+        type: 3}
       propertyPath: AudioShoot
       value: 
       objectReference: {fileID: 370228936}
+    - target: {fileID: 6779707824571566099, guid: abb95c95f497ab24186f486e0236ceb4,
+        type: 3}
+      propertyPath: panelPause
+      value: 
+      objectReference: {fileID: 1628954986}
     - target: {fileID: 6779707824571566100, guid: abb95c95f497ab24186f486e0236ceb4,
         type: 3}
       propertyPath: Pad

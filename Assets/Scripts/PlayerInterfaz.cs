@@ -6,34 +6,36 @@ using UnityEngine.SceneManagement;
 
 public class PlayerInterfaz : MonoBehaviour
 {
+
     public Image Barravida;
-    public float vida;
+    public float vidaUI;
     public GameObject panelPause;
     public GameObject cRojo;
     public GameObject cAzul;
     public GameObject cAmarillo;
     public AudioSource hit;
-   
+    
+
 
     void Start()
     {
-        vida = 100;
-        Barravida.fillAmount = 1;
+        vidaUI = 100;
+        Barravida.fillAmount = 1;        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
     public void RecibirGolpe()
     {
-        vida = vida - 5;
-        Barravida.fillAmount = vida / 100;
+        vidaUI = vidaUI - 5;
+        Barravida.fillAmount = vidaUI / 100;
         hit.Play();
         
 
-        if (vida == 00)
+        if (vidaUI == 00)
         {
             panelPause.SetActive(true);
             Time.timeScale = 0;
@@ -61,8 +63,7 @@ public class PlayerInterfaz : MonoBehaviour
         {
             cAmarillo.SetActive(true);
         }
-    }
-   
-    
+    }    
+
 
 }

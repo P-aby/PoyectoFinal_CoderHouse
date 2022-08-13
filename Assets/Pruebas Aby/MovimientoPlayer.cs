@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MovimientoPlayer : MonoBehaviour
+public class MovimientoPlayer : MensajesUI
 {
     public Vector3 desplazamiento;
     public float speed;
@@ -13,11 +13,8 @@ public class MovimientoPlayer : MonoBehaviour
     public GameObject Pad;
     public GameObject BaseC;
     public GameObject Cristales;
-    public Text Mensajes;
     public Animator anim;
     
-
-
 
     void Start()
     {
@@ -27,9 +24,7 @@ public class MovimientoPlayer : MonoBehaviour
     void Update()
     {
         Movimiento();
-        Disparo();
-        
-        
+        Disparo();       
     }
     void Movimiento()
     {
@@ -51,11 +46,7 @@ public class MovimientoPlayer : MonoBehaviour
         }
 
     }
-    public void ResetearText()
-    {
-        Mensajes.text = "";
-    }
-   
+     
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.transform.tag == "Obstaculo")
@@ -72,9 +63,10 @@ public class MovimientoPlayer : MonoBehaviour
 
             var animDomo = Domo.GetComponent<Animator>();
             animDomo.SetBool("Domo", true);
-            
+
             Mensajes.text = "Recoge las municiones y destruye a los enemigos, puedes cambiar de arma con 1 y 2";
-            Invoke("ResetearText",2f);            
+            Invoke("ResetearText",2f);   
+           
         }
         
     }
@@ -127,4 +119,6 @@ public class MovimientoPlayer : MonoBehaviour
         }
         
     }
+   
+
 }

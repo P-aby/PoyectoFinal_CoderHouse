@@ -10,6 +10,7 @@ public class EnemigoC : MonoBehaviour
     public int Tiempo_Enem;
     public Animator animEnemC;
     
+    
    
 
     void Start()

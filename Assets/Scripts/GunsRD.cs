@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GunsRD : MonoBehaviour
+public class GunsRD : MensajesUI
 {
  
     public GameObject Gun1;
@@ -18,10 +18,7 @@ public class GunsRD : MonoBehaviour
     public ParticleSystem Flash2;
     public AudioSource AudioHit;
     public AudioSource AudioShoot;
-    public Text Mensajes;
     public GameObject Image;
-    
-    
 
 
     void Start()
@@ -53,14 +50,13 @@ public class GunsRD : MonoBehaviour
                 Shoot();
                 Flash1.Play();
                 AudioShoot.Play();
-                Debug.Log("FIRE");
+                
                 
 
             }
             else
             {
                 Bullet1Count = 0;
-                Debug.Log("Reload!!");
                 Mensajes.text = "Reload!";
                 Invoke("ResetearText", 2f);
             }
@@ -78,12 +74,11 @@ public class GunsRD : MonoBehaviour
                 Shoot();
                 Flash2.Play();
                 AudioShoot.Play();
-                Debug.Log("FIRE");
+                
             }
             else
             {
                 Bullet2Count = 0;
-                Debug.Log("Reload!!");
                 Mensajes.text = "Reload!";
                 Invoke("ResetearText", 2f);
             }
@@ -165,10 +160,7 @@ public class GunsRD : MonoBehaviour
         {
             GetGun2();
         }
-    }
-    public void ResetearText()
-    {
-        Mensajes.text = "";
-    }
+    }  
+
 
 }
