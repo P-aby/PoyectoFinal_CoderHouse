@@ -20,8 +20,7 @@ public class AnimationCharacter : MonoBehaviour
     {
         float hor = Input.GetAxis("Horizontal");
         float ver = Input.GetAxis("Vertical");
-        float rot = Input.GetAxis("Mouse X");
-
+     
         Vector3 inputPlayer = new Vector3(hor, 0, ver);
        
         if (inputPlayer == Vector3.zero)
