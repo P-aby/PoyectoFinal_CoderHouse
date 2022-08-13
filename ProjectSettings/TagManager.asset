@@ -15,6 +15,7 @@ TagManager:
   - Bullets2
   - FxTemporaire
   - Pad
+  - Obstaculo
   layers:
   - Default
   - TransparentFX

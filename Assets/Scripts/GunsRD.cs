@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GunsRD : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class GunsRD : MonoBehaviour
     public ParticleSystem Flash2;
     public AudioSource AudioHit;
     public AudioSource AudioShoot;
+    public Text Mensajes;
+    public GameObject Image;
+    
+    
 
 
     void Start()
@@ -42,6 +47,7 @@ public class GunsRD : MonoBehaviour
         if (Gun1.activeSelf == true && Input.GetButtonDown("Fire1"))
         {
             Bullet1Count = Bullet1Count - 1;
+            //FindObjectOfType<MovimientoPlayer>().Disparo();
             if (Bullet1Count > 0)
             {
                 Shoot();
@@ -49,11 +55,14 @@ public class GunsRD : MonoBehaviour
                 AudioShoot.Play();
                 Debug.Log("FIRE");
                 
+
             }
             else
             {
                 Bullet1Count = 0;
                 Debug.Log("Reload!!");
+                Mensajes.text = "Reload!";
+                Invoke("ResetearText", 2f);
             }
         }
     }
@@ -62,6 +71,7 @@ public class GunsRD : MonoBehaviour
         if (Gun2.activeSelf == true && Input.GetButtonDown("Fire1"))
         {
             Bullet2Count = Bullet2Count - 1;
+          // FindObjectOfType<MovimientoPlayer>().Disparo();
             if (Bullet2Count > 0)
             {
                
@@ -74,6 +84,8 @@ public class GunsRD : MonoBehaviour
             {
                 Bullet2Count = 0;
                 Debug.Log("Reload!!");
+                Mensajes.text = "Reload!";
+                Invoke("ResetearText", 2f);
             }
         }
     }
@@ -84,7 +96,10 @@ public class GunsRD : MonoBehaviour
         if (collision.transform.tag == "Gun1")
         {
             GetGun1();
-           
+            Image.SetActive(true);
+            Mensajes.text = "Para disparar presiona click";
+            Invoke("ResetearText", 2f);
+
         }
         //Se obtine el arma 2
         if (collision.transform.tag == "Gun2")
@@ -151,5 +166,9 @@ public class GunsRD : MonoBehaviour
             GetGun2();
         }
     }
-   
+    public void ResetearText()
+    {
+        Mensajes.text = "";
+    }
+
 }

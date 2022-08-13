@@ -98,6 +98,6 @@ Material:
     - _marchDistance: 0.85
     - _numSteps: 5.25
     m_Colors:
-    - _Color: {r: 22.127207, g: 1.0219975, b: 1.565604, a: 1}
+    - _Color: {r: 1.950857, g: 0.46010783, b: 0.50106245, a: 1}
     - _EmissionColor: {r: 0, g: 0.9810735, b: 2.433572, a: 0}
     - _EmissiveColor: {r: 0.8301887, g: 0.043075833, b: 0.08081473, a: 1}

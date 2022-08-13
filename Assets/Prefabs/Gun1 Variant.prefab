@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576634372668950, guid: 32ca24d493f79754a94923210f088a44, type: 3}
       propertyPath: m_Name
-      value: Gun1
+      value: Gun1 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1576634372668950, guid: 32ca24d493f79754a94923210f088a44, type: 3}
       propertyPath: m_Layer

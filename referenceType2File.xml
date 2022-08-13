@@ -113,7 +113,7 @@
   <TypeDate>
     <guid>6fd2e8874f60266498a388d7229a1bac</guid>
     <fileName>Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs</fileName>
-    <timeStamp>2022-07-27T00:08:44.6140108-06:00</timeStamp>
+    <timeStamp>2022-07-30T19:52:32.4402207-06:00</timeStamp>
     <typeFullName>
       <string>CFX_AutoDestructShuriken</string>
     </typeFullName>
@@ -176,7 +176,7 @@
   <TypeDate>
     <guid>cf4b0839f1ef35c4ba58733d43cc46c6</guid>
     <fileName>Assets/Pruebas Aby/EnemigoC.cs</fileName>
-    <timeStamp>2022-07-23T18:59:16.9165451-06:00</timeStamp>
+    <timeStamp>2022-08-06T11:49:30.1569945-06:00</timeStamp>
     <typeFullName>
       <string>EnemigoC</string>
     </typeFullName>
@@ -185,7 +185,7 @@
   <TypeDate>
     <guid>008dfcfd529449d41be53b3ee1f69048</guid>
     <fileName>Assets/Pruebas Aby/MovimientoPlayer.cs</fileName>
-    <timeStamp>2022-07-27T20:36:18.0080964-06:00</timeStamp>
+    <timeStamp>2022-08-12T17:11:58.550601-06:00</timeStamp>
     <typeFullName>
       <string>MovimientoPlayer</string>
     </typeFullName>
@@ -194,7 +194,7 @@
   <TypeDate>
     <guid>eb411027c79721841b6424092cb7b502</guid>
     <fileName>Assets/Scripts/AudioManager.cs</fileName>
-    <timeStamp>2022-07-27T19:06:18.5568162-06:00</timeStamp>
+    <timeStamp>2022-07-30T19:52:33.2665781-06:00</timeStamp>
     <typeFullName>
       <string>AudioManager</string>
     </typeFullName>
@@ -203,7 +203,7 @@
   <TypeDate>
     <guid>f22fbe1fb67d2de41b7538b130394ec8</guid>
     <fileName>Assets/Scripts/CameraPitch.cs</fileName>
-    <timeStamp>2022-07-23T18:54:36.0356985-06:00</timeStamp>
+    <timeStamp>2022-07-30T19:52:33.2665781-06:00</timeStamp>
     <typeFullName>
       <string>CameraPitch</string>
     </typeFullName>
@@ -212,7 +212,7 @@
   <TypeDate>
     <guid>77d48531d4795254a810457579c8b1df</guid>
     <fileName>Assets/Scripts/DestroyColObj.cs</fileName>
-    <timeStamp>2022-07-23T07:42:00.798581-06:00</timeStamp>
+    <timeStamp>2022-07-30T19:52:33.2665781-06:00</timeStamp>
     <typeFullName>
       <string>DestroyColObj</string>
     </typeFullName>
@@ -230,7 +230,7 @@
   <TypeDate>
     <guid>d778a20fab5c54f488c020e467bcb115</guid>
     <fileName>Assets/Scripts/EnemyHealth.cs</fileName>
-    <timeStamp>2022-07-23T21:52:02.5123625-06:00</timeStamp>
+    <timeStamp>2022-07-30T19:52:33.2665781-06:00</timeStamp>
     <typeFullName>
       <string>EnemyHealth</string>
     </typeFullName>
@@ -239,7 +239,7 @@
   <TypeDate>
     <guid>4d2f6bc67d4ee0642bcd67cb78e217e2</guid>
     <fileName>Assets/Scripts/GunsRD.cs</fileName>
-    <timeStamp>2022-07-27T20:07:37.12681-06:00</timeStamp>
+    <timeStamp>2022-07-30T19:52:33.2675782-06:00</timeStamp>
     <typeFullName>
       <string>GunsRD</string>
     </typeFullName>
@@ -257,7 +257,7 @@
   <TypeDate>
     <guid>c79102a3e331ebd44be6b7bff1fa21ce</guid>
     <fileName>Assets/Scripts/PlayerHealth.cs</fileName>
-    <timeStamp>2022-07-27T19:35:34.6708699-06:00</timeStamp>
+    <timeStamp>2022-08-06T10:24:15.7532949-06:00</timeStamp>
     <typeFullName>
       <string>PlayerHealth</string>
     </typeFullName>
@@ -275,9 +275,63 @@
   <TypeDate>
     <guid>af74bb60eecc55a4e9db95ea34791777</guid>
     <fileName>Assets/Scripts/SceneLoader.cs</fileName>
-    <timeStamp>2022-07-27T19:40:03.9011468-06:00</timeStamp>
+    <timeStamp>2022-07-30T19:52:33.2675782-06:00</timeStamp>
     <typeFullName>
       <string>SceneLoader</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>86550cbe56ff35544bbeb799be9bb1f2</guid>
+    <fileName>Assets/Scripts/AnimationCharacter.cs</fileName>
+    <timeStamp>2022-08-12T17:47:41.2457113-06:00</timeStamp>
+    <typeFullName>
+      <string>AnimationCharacter</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>53d08965c16bacb4ea5073eaa2ef71f9</guid>
+    <fileName>Assets/Scripts/Interfaz_Inicio.cs</fileName>
+    <timeStamp>2022-08-06T10:27:27.0890309-06:00</timeStamp>
+    <typeFullName>
+      <string>Interfaz_Inicio</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>eb2528bf12875b44d9e05ecdee2191da</guid>
+    <fileName>Assets/Scripts/PlayerInterfaz.cs</fileName>
+    <timeStamp>2022-08-06T13:19:32.8017167-06:00</timeStamp>
+    <typeFullName>
+      <string>PlayerInterfaz</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>92f64c44e74a0974a8332938621b52d7</guid>
+    <fileName>Assets/Scripts/TDA_Array.cs</fileName>
+    <timeStamp>2022-07-30T20:35:34.2913994-06:00</timeStamp>
+    <typeFullName>
+      <string>TDA_Array</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>77cd4648b8c505d40b4744557e5f4421</guid>
+    <fileName>Assets/Scripts/TDA_List.cs</fileName>
+    <timeStamp>2022-08-04T15:24:13.0768519-06:00</timeStamp>
+    <typeFullName>
+      <string>TDA_List</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>13de6249d4093cd4eadfcdff3e986d63</guid>
+    <fileName>Assets/Scripts/TDA_Queue.cs</fileName>
+    <timeStamp>2022-08-04T15:24:13.0798528-06:00</timeStamp>
+    <typeFullName>
+      <string>TDA_Queue</string>
     </typeFullName>
     <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
   </TypeDate>

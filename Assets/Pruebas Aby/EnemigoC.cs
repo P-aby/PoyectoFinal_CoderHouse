@@ -9,6 +9,7 @@ public class EnemigoC : MonoBehaviour
     public float speed;
     public int Tiempo_Enem;
     public Animator animEnemC;
+    
    
 
     void Start()
@@ -46,7 +47,7 @@ public class EnemigoC : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.name == "Player")
+        if (collision.collider.tag == "Player")
         {
             FindObjectOfType<PlayerInterfaz>().RecibirGolpe();
         }

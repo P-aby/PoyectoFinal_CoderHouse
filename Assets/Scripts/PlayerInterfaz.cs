@@ -12,6 +12,8 @@ public class PlayerInterfaz : MonoBehaviour
     public GameObject cRojo;
     public GameObject cAzul;
     public GameObject cAmarillo;
+    public AudioSource hit;
+   
 
     void Start()
     {
@@ -27,9 +29,11 @@ public class PlayerInterfaz : MonoBehaviour
     public void RecibirGolpe()
     {
         vida = vida - 5;
-        Barravida.fillAmount = vida / 100;   
+        Barravida.fillAmount = vida / 100;
+        hit.Play();
         
-        if(vida == 00)
+
+        if (vida == 00)
         {
             panelPause.SetActive(true);
             Time.timeScale = 0;
@@ -58,10 +62,7 @@ public class PlayerInterfaz : MonoBehaviour
             cAmarillo.SetActive(true);
         }
     }
-    public void Mensajes()
-    {
-
-    }
+   
     
 
 }

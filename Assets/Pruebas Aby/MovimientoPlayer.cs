@@ -15,6 +15,8 @@ public class MovimientoPlayer : MonoBehaviour
     public GameObject Cristales;
     public Text Mensajes;
     public Animator anim;
+    
+
 
 
     void Start()
@@ -25,6 +27,8 @@ public class MovimientoPlayer : MonoBehaviour
     void Update()
     {
         Movimiento();
+        Disparo();
+        
         
     }
     void Movimiento()
@@ -47,17 +51,19 @@ public class MovimientoPlayer : MonoBehaviour
         }
 
     }
-    void ResetearText()
+    public void ResetearText()
     {
         Mensajes.text = "";
     }
    
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.transform.tag == "Domo")
+        if (collision.collider.transform.tag == "Obstaculo")
         {
             FindObjectOfType<PlayerInterfaz>().RecibirGolpe();
-        }      
+            anim.SetBool("Hit", true);
+        }
+        
 
         if (collision.collider.transform.tag == "BaseC")
         {
@@ -79,9 +85,18 @@ public class MovimientoPlayer : MonoBehaviour
         {
             Mensajes.text = "Consigue los cristales y el arma para desactivar el Domo. Puedes cambiar de arma con las teclas 1 y 2";
             Invoke("ResetearText", 2f);
-        }       
+        }        
+
     }
-    
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.transform.tag == "Obstaculo")
+        {
+           anim.SetBool("Hit", false);
+        }
+    }
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Cristales_Domo")
@@ -99,5 +114,17 @@ public class MovimientoPlayer : MonoBehaviour
             anim.SetBool("BasesCristales",true);
             Destroy(Pad);
         }        
+    }
+    public void Disparo()
+    {
+        if(Input.GetButton("Fire1"))
+        {
+            anim.SetBool("Gun", true);
+        }
+        else
+        {
+            anim.SetBool("Gun", false);
+        }
+        
     }
 }
