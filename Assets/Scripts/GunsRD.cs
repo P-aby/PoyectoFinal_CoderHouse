@@ -100,7 +100,9 @@ public class GunsRD : MensajesUI
         if (collision.transform.tag == "Gun2")
         {
             GetGun2();
-           
+            Mensajes.text = "Para disparar presiona click";
+            Invoke("ResetearText", 2f);
+
         }
         //Se obtinen municiones para arma 1
         if (collision.transform.tag == "Bullets1")
@@ -143,7 +145,7 @@ public class GunsRD : MensajesUI
             if (enemy != null)
             {
                 enemy.TakeDamage(Damage);
-                AudioHit.Play();
+                //AudioHit.Play();
             }
         }
        

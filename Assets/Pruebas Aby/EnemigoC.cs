@@ -13,11 +13,7 @@ public class EnemigoC : MonoBehaviour
     
    
 
-    void Start()
-    {
-        
-    }
-   
+      
     void Update()
     {
         Distanciaenemigo();

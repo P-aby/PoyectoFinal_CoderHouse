@@ -17,6 +17,7 @@ TagManager:
   - Pad
   - Obstaculo
   - postprocessing
+  - Key
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - 
   - Enemigos
   - Guns
-  - 
+  - PostProcessing
   - 
   - 
   - 
