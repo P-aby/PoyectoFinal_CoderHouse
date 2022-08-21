@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class GunsRD : MensajesUI
 {
@@ -19,6 +20,7 @@ public class GunsRD : MensajesUI
     public AudioSource AudioHit;
     public AudioSource AudioShoot;
     public GameObject Image;
+    public GameObject TDAObj;
 
 
     void Start()
@@ -94,6 +96,8 @@ public class GunsRD : MensajesUI
             Image.SetActive(true);
             Mensajes.text = "Para disparar presiona click";
             Invoke("ResetearText", 2f);
+            var tdaswitch = TDAObj.GetComponent<TDA_Objetivos>();
+            tdaswitch.Invoke("RecorrerLista", 1f);
 
         }
         //Se obtine el arma 2
