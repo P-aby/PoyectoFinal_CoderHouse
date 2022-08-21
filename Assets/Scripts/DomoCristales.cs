@@ -16,6 +16,7 @@ public class DomoCristales : MensajesUI
     public GameObject cRojo;
     public GameObject cAzul;
     public GameObject cAmarillo;
+    public GameObject SphereReflectOut;
 
 
     public void DomoActive()
@@ -76,6 +77,7 @@ public class DomoCristales : MensajesUI
             var anim = BaseC.GetComponent<Animator>();
             anim.SetBool("BasesCristales", true);
             Destroy(Pad_);
+            SphereReflectOut.SetActive(false);
         }
     } 
 }
