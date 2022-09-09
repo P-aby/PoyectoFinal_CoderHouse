@@ -14,7 +14,7 @@ public class NaveMesh_Enemy : MonoBehaviour
     {
         float dist = Vector3.Distance(transform.position, TransformPointer.position);
 
-        if (dist < 60)
+        if (dist < 35)
         {
            EnemyNaveMesh.destination = pointer.transform.position;
            EnemyController.SetBool("Run Forward", true);

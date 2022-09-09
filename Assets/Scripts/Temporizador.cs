@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Temporizador : MonoBehaviour
 {
@@ -17,5 +18,13 @@ public class Temporizador : MonoBehaviour
             Time.timeScale = 0;
         }
     }
-    
+    public void ButtonRestart()
+    {
+        tiempo = 30f;
+        Time.timeScale = 1;        
+        panelPause.SetActive(false);
+        SceneManager.LoadScene(1);
+
+    }
+
 }

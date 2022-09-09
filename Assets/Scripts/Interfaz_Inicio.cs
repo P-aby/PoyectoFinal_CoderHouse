@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Interfaz_Inicio : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     void Start()
     {
         
@@ -30,4 +30,6 @@ public class Interfaz_Inicio : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+ 
 }

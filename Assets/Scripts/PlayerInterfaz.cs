@@ -8,10 +8,10 @@ public class PlayerInterfaz : MonoBehaviour
 {
 
     public Image Barravida;
-    public float vidaUI;
-    public GameObject panelPause;
+    public float vidaUI;  
     public AudioSource hit;
     public Animator anim;
+    public GameObject panelPause;
 
     void Start()
     {
@@ -33,12 +33,15 @@ public class PlayerInterfaz : MonoBehaviour
             Time.timeScale = 0;
         }
 
-    } 
+    }
+
     public void ButtonRestart()
     {
-        panelPause.SetActive(false);
+        vidaUI = 100;
         Time.timeScale = 1;
+        panelPause.SetActive(false);
         SceneManager.LoadScene(1);
 
-    }   
+    }
+
 }

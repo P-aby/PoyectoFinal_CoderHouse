@@ -57,7 +57,7 @@ public class GunsRD : MensajesUI
             else
             {
                 Bullet1Count = 0;
-                Mensajes.text = "Reload!";
+                Mensajes.text = "Reload! cambia de arma con 1 y 2";
                 Invoke("ResetearText", 2f);
             }
         }
@@ -76,7 +76,7 @@ public class GunsRD : MensajesUI
             else
             {
                 Bullet2Count = 0;
-                Mensajes.text = "Reload!";
+                Mensajes.text = "Reload! cambia de arma con 1 y 2";
                 Invoke("ResetearText", 2f);
             }
         }

@@ -14,6 +14,7 @@ public class ActivarPuerta : MensajesUI
     public GameObject Laberinto;
     public GameObject Temporizador;
     public GameObject RelojUI;
+    public GameObject panelWin;
 
 
     public void DestruirKey()
@@ -34,7 +35,7 @@ public class ActivarPuerta : MensajesUI
     }
     public void CargarEscena()
     {
-        SceneManager.LoadScene(4);
+        panelWin.SetActive(true);
     }
 
     public void PostProcessing()
