@@ -55,6 +55,11 @@ public class MovimientoPlayer : MensajesUI
         {
            anim.SetBool("Hit", false);
         }
+
+        if (collision.collider.transform.tag == "Enemy1")
+        {
+            anim.SetBool("Hit", false);
+        }
     }
    public void Disparo()
     {
@@ -66,6 +71,6 @@ public class MovimientoPlayer : MensajesUI
         {
             anim.SetBool("Gun", false);
         }        
-    }   
+    }      
 
 }

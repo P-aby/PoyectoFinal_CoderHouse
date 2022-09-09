@@ -17,6 +17,7 @@ public class DomoCristales : MensajesUI
     public GameObject cAzul;
     public GameObject cAmarillo;
     public GameObject SphereReflectOut;
+    public GameObject laberinto;
 
 
     public void DomoActive()
@@ -31,9 +32,10 @@ public class DomoCristales : MensajesUI
 
         var animDomo = Domo.GetComponent<Animator>();
         animDomo.SetBool("Domo", true);
+        laberinto.SetActive(true);
 
         Mensajes.text = "Recoge las municiones y destruye a los enemigos, puedes cambiar de arma con 1 y 2";
-        Invoke("ResetearText", 10f);
+        Invoke("ResetearText", 10);
     }
     public void Pad()
     {
@@ -45,7 +47,7 @@ public class DomoCristales : MensajesUI
     {
         CristalDomo++;
         Destroy(cristalRojo);
-        Mensajes.text = "Ya tienes " + CristalDomo + " cristales";
+        Mensajes.text = "Ya tienes " + CristalDomo + "/3 cristales";
         Invoke("ResetearText", 4f);
         cRojo.SetActive(true);
     }
@@ -53,7 +55,7 @@ public class DomoCristales : MensajesUI
     {
         CristalDomo++;
         Destroy(cristalAzul);
-        Mensajes.text = "Ya tienes " + CristalDomo + " cristales";
+        Mensajes.text = "Ya tienes " + CristalDomo + "/3 cristales";
         Invoke("ResetearText", 4f);
         cAzul.SetActive(true);
 
@@ -62,7 +64,7 @@ public class DomoCristales : MensajesUI
     {
         CristalDomo++;
         Destroy(cristalAmarillo);
-        Mensajes.text = "Ya tienes " + CristalDomo + " cristales";
+        Mensajes.text = "Ya tienes " + CristalDomo + "/3 cristales";
         Invoke("ResetearText", 4f);
         cAmarillo.SetActive(true);
     }

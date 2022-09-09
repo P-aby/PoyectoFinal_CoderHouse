@@ -7,14 +7,29 @@ public class EnemyHealth : MonoBehaviour
 
     public float health = 2;
     public float DamageGiven = 2;
+    public static EnemyHealth enemigo;  
+    
+
+    void Start()
+    {
+       
+    }    
 
     public void TakeDamage(float Damage)
     {
+        
         health -= Damage;
+
         if (health <= 0f)
         {
-            Destroy(gameObject);
-        }
+            Destroy(gameObject);           
+           
+            
+          
+        }       
+
+
+
 
     }
 }

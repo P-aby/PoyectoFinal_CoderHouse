@@ -14,18 +14,22 @@ public class GunsRD : MensajesUI
     public float Bullet2Count = 3f;
     public float Damage = 1f;
     public Camera fpsCam;
-    public float distance = 50;
+    public float distance = 100;
     public ParticleSystem Flash1;
     public ParticleSystem Flash2;
     public AudioSource AudioHit;
     public AudioSource AudioShoot;
     public GameObject Image;
     public GameObject TDAObj;
+    public int enemigos;
+    public GameObject Key;
+
+
 
 
     void Start()
     {
-        
+        enemigos = 18;
     }
 
    
@@ -35,26 +39,20 @@ public class GunsRD : MensajesUI
 
         GunChange();
         Bullet1();
-        Bullet2();
+        Bullet2();        
     }
-
-
-
 
     void Bullet1()
     {
         if (Gun1.activeSelf == true && Input.GetButtonDown("Fire1"))
         {
             Bullet1Count = Bullet1Count - 1;
-            //FindObjectOfType<MovimientoPlayer>().Disparo();
             if (Bullet1Count > 0)
             {
-                Shoot();
+                Disparar();
                 Flash1.Play();
-                AudioShoot.Play();
+                AudioShoot.Play();     
                 
-                
-
             }
             else
             {
@@ -69,14 +67,11 @@ public class GunsRD : MensajesUI
         if (Gun2.activeSelf == true && Input.GetButtonDown("Fire1"))
         {
             Bullet2Count = Bullet2Count - 1;
-          // FindObjectOfType<MovimientoPlayer>().Disparo();
             if (Bullet2Count > 0)
             {
-               
-                Shoot();
+                Disparar();
                 Flash2.Play();
-                AudioShoot.Play();
-                
+                AudioShoot.Play();                
             }
             else
             {
@@ -132,7 +127,7 @@ public class GunsRD : MensajesUI
     }
     void GetGun2()
     {
-        Damage = 3;
+        Damage = 1;
         Gun2.SetActive(true);
         Gun1.SetActive(false);
         Crosshair.SetActive(true);
@@ -148,11 +143,10 @@ public class GunsRD : MensajesUI
             EnemyHealth enemy = hit.transform.GetComponent<EnemyHealth>();
             if (enemy != null)
             {
-                enemy.TakeDamage(Damage);
+                enemy.TakeDamage(Damage);                               
                 //AudioHit.Play();
-            }
-        }
-       
+            }            
+        }        
 
     }
     void GunChange()
@@ -166,7 +160,34 @@ public class GunsRD : MensajesUI
         {
             GetGun2();
         }
-    }  
+    }
+
+    void Disparar()
+    {
+        RaycastHit hit;
+
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, distance))
+        {
+            if (hit.transform.tag == "Enemy1")
+            {
+                Destroy(hit.transform.gameObject);
+                enemigos--;
+                if (enemigos == 0)
+                {
+                    DesactivarLlave();
+                }
+            }
+        }
+    }
+
+    void DesactivarLlave()
+    {        
+            Key.SetActive(true);
+            Mensajes.text = "¡Has desactivado la llave, recogela!";
+            Invoke("ResetearText", 5f);        
+    }
+
+
 
 
 }

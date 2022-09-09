@@ -189,7 +189,7 @@ CapsuleCollider:
   m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.8, z: 0}
---- !u!114 &269487225
+--- !u!114 &-3240039003699323036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,6 +197,23 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3392433572552079516}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f767ba3f25f7d0448a7a5aa36f9afd3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 100
+  fpsCam: {fileID: 1072604093}
+  Flash1: {fileID: 0}
+  AudioHit: {fileID: 0}
+  AudioShoot: {fileID: 0}
+--- !u!114 &269487225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3392433572552079516}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d2f6bc67d4ee0642bcd67cb78e217e2, type: 3}
   m_Name: 
@@ -215,6 +232,7 @@ MonoBehaviour:
   AudioHit: {fileID: 0}
   AudioShoot: {fileID: 0}
   Image: {fileID: 0}
+  TDAObj: {fileID: 0}
 --- !u!114 &269487226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,7 +277,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100166, guid: a5674d01884853d4e8f2386a171e14d9, type: 3}
       propertyPath: m_Name
-      value: PlayerEllen
+      value: PlayerEllen Variant
       objectReference: {fileID: 0}
     - target: {fileID: 100166, guid: a5674d01884853d4e8f2386a171e14d9, type: 3}
       propertyPath: m_TagString

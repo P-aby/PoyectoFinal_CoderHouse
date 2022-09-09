@@ -13,7 +13,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.45, y: 1.3, z: 2.96}
   m_Center: {x: 0, y: 0.94, z: 0}
---- !u!114 &1201538392
+--- !u!114 &2211835384523369603
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22,29 +22,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 8103760902138337519}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf4b0839f1ef35c4ba58733d43cc46c6, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ae11aeeca0976a46811641f9bc66e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 8413140764752651059, guid: 21278d01006050148bb018386308777d, type: 3}
-  TransPlayer: {fileID: 8413140764752651023, guid: 21278d01006050148bb018386308777d,
-    type: 3}
-  speed: 8
-  Tiempo_Enem: 20
-  animEnemC: {fileID: 8152584120575734761}
---- !u!114 &1201538395
-MonoBehaviour:
+  pointer: {fileID: 0}
+  EnemyNaveMesh: {fileID: 0}
+  TransformPointer: {fileID: 0}
+  EnemyController: {fileID: 0}
+--- !u!195 &3062099763715052087
+NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8103760902138337519}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d778a20fab5c54f488c020e467bcb115, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 2
-  DamageGiven: 2
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &8102632152560979605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74,7 +80,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1128758269040250, guid: f88c6ad57910d8648807bcf0c131f49d, type: 3}
       propertyPath: m_TagString
-      value: Enemy1
+      value: Obstaculo
       objectReference: {fileID: 0}
     - target: {fileID: 1130806907750044, guid: f88c6ad57910d8648807bcf0c131f49d, type: 3}
       propertyPath: m_Layer
@@ -292,17 +298,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95025375702580604, guid: f88c6ad57910d8648807bcf0c131f49d,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1cbf2689b2481074a8a449703ec0ffe5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f88c6ad57910d8648807bcf0c131f49d, type: 3}
 --- !u!1 &8103760902138337519 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1128758269040250, guid: f88c6ad57910d8648807bcf0c131f49d,
-    type: 3}
-  m_PrefabInstance: {fileID: 8102632152560979605}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &8152584120575734761 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 95025375702580604, guid: f88c6ad57910d8648807bcf0c131f49d,
     type: 3}
   m_PrefabInstance: {fileID: 8102632152560979605}
   m_PrefabAsset: {fileID: 0}
